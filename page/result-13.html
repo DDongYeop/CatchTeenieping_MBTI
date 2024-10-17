@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir=""ltr>
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta class="author" content="DDongYeop">
+        <meta class="keyowrds" content="티니핑 MBTI 테스트">
+        <meta class="description" content="티니핑 MBTI 테스트">
+    
+        <!-- sns share -->
+        <meta property="og:url" content="https://catchteenieping-mbti.netlify.app/" />
+        <meta property="ogtitle" content="티니핑 MBTI 테스트" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="../img/share.png">
+        <meta property="og:description" content="티니핑 MBTI 테스트" />
+    
+        <!--favicon-->
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../img/favicon.ico">
+    
+        <title>티니핑 MBTI 테스트</title>
+        <!--부스트스랩 넣음. 미리 만들어진 것들을 사용할 수 있다.-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../css/result.css">
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+            Kakao.init('e6f7046d0edb0831037eb84ab667dc23');
+            Kakao.isInitialized();
+        </script>
+    </head>
+    <body>
+        <section id="shareResult" class="mx-auto my-3 py-5 px-3"> 
+            <h1 class="pt-5">당신의 결과는?!</h1>
+            <div class="resultname">
+                <p>당신의 티니핑은 '딱풀핑'입니다.</p>
+            </div>
+            <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col- mx-auto">
+                <img src="../img/image-13.png" alt="0" class="img-fluid">
+            </div>
+            <script type="text/javascript">
+                function moveHome() {
+                    location.href = "/index.html";
+                }
+            </script>
+            <div class="resultDesc">
+                <p>딱풀핑은 따뜻하고 사교적인 성향을 가진 캐릭터야, 딱딱! 딱풀핑은 항상 다른 티니핑들의 감정과 필요를 신경 쓰며, 그들이 편안하게 느낄 수 있도록 세심하게 배려해, 딱딱! 이들은 규칙과 전통을 존중하고, 공동체 내에서 조화와 협력을 중요시해, 딱딱! 딱풀핑은 팀의 분위기를 살피고, 모든 티니핑들이 잘 어울리도록 돕는 역할을 맡아, 딱딱! 사람들과 함께하는 것을 좋아하며, 주변에 따뜻한 에너지를 전하는 것이 특징이야, 딱딱!</p>
+            </div>
+            <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button>
+        </section>
+    </body>
+</head>
+<body>
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir=""ltr>
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta class="author" content="DDongYeop">
+        <meta class="keyowrds" content="티니핑 MBTI 테스트">
+        <meta class="description" content="티니핑 MBTI 테스트">
+    
+        <!-- sns share -->
+        <meta property="og:url" content="https://catchteenieping-mbti.netlify.app/" />
+        <meta property="ogtitle" content="티니핑 MBTI 테스트" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="../img/share.png">
+        <meta property="og:description" content="티니핑 MBTI 테스트" />
+    
+        <!--favicon-->
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="../img/favicon.ico">
+    
+        <title>티니핑 MBTI 테스트</title>
+        <!--부스트스랩 넣음. 미리 만들어진 것들을 사용할 수 있다.-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/default.css">
+        <link rel="stylesheet" href="../css/result.css">
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+            Kakao.init('e6f7046d0edb0831037eb84ab667dc23');
+            Kakao.isInitialized();
+        </script>
+    </head>
+    <body>
+        <section id="shareResult" class="mx-auto my-3 py-5 px-3"> 
+            <h1 class="pt-5">당신의 결과는?!</h1>
+            <div class="resultname">
+                <p>당신의 티니핑은 '키키핑'입니다.</p>
+            </div>
+            <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col- mx-auto">
+                <img src="../img/image-9.png" alt="0" class="img-fluid">
+            </div>
+            <script type="text/javascript">
+                function moveHome() {
+                    location.href = "/index.html";
+                }
+            </script>
+            <div class="resultDesc">
+                <p>키키핑은 활발하고 에너지 넘치는 캐릭터야, 키키! 키키핑은 다른 티니핑들과 함께 시간을 보내는 것을 좋아하며, 모든 상황에서 긍정적인 에너지를 전달하려 해, 키키! 이들은 즉흥적이고 감정적으로 충실하게 행동하며, 새로운 경험을 즐기고, 주변을 활기차게 만드는 역할을 해, 키키! 사람들과 함께 어울리며 행복을 나누는 것을 중요하게 생각해, 키키!</p>
+            </div>
+            <button type="button" class="gohome mt-3 py-2 px-3" onclick="js:moveHome()">나도 참여하기</button>
+        </section>
+    </body>
+</head>
+<body>
+</body>
