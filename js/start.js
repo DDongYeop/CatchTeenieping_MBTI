@@ -1,7 +1,7 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const endPoint = 12;
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 const result = document.querySelector("#result");
 // const < 상수, var < 변수
 // querySelector < 문서에서 CSS에 대응되는 것을 찾아옴. id값을 main을 가져오는거.
@@ -91,8 +91,8 @@ function goNext(qIdx) {
         addAnswer(qnaList[qIdx].a[i].answer, qIdx, i);
     }
 
-    var status= document.querySelector('.statusBar');
-    status.style.width = (100/endPoint) * (qIdx+1) + '%';
+    var status = document.querySelector('.statusBar');
+    status.style.width = (100/endPoint) * (qIdx) + '%';
 }
 
 function begin() {

@@ -9,7 +9,7 @@
     <meta class="description" content="티니핑 MBTI 테스트">
 
     <!-- sns share -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://catchteenieping-mbti.netlify.app/" />
     <meta property="ogtitle" content="티니핑 MBTI 테스트" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./img/share.png">
@@ -30,12 +30,17 @@
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/result.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        kakao.init('e6f7046d0edb0831037eb84ab667dc23');
+        kakao.isInitialized();
+    </script>
 </head>
 
 
 <body>
     <div class="container">
-        <section id="main" class="mx-auto my-5 py-5 px-3">
+        <section id="main" class="mx-auto my-5 py-3 px-3">
             <h1 class="pt-5">티니핑 MBTI 테스트</h1>
             <div class="col-lg-6 col-md-8 col-sm-10 col- mx-auto">
                 <img src="./img/main.png" alt="mainImage" class="img-fluid">
@@ -47,7 +52,7 @@
             <button type="button" class="btn btn-danger mt-3" onclick="js:begin()">시작하기</button>
         </section>
         <section id="qna">
-            <div class="status mx-auto mt-50">
+            <div class="status mx-auto mt-1">
                 <div class="statusBar">
                     
                 </div>
@@ -55,10 +60,12 @@
             <div class="qBox my-5 py-3 mx-auto">
                 <!--innerHtml 사용하여 입력.-->
             </div>
-            <div class="answerBox">
+            <div class="EmptyArea01 my-5 mt-5 py-5 mx-auto"> </div>
+            <div class="EmptyArea02 my-5 mt-5 py-5 mx-auto"> </div>
+            <div class="answerBox mt-5">
             </div>
         </section>
-        <section id="result" class="mx-auto my-5 py-5 px-3"> 
+        <section id="result" class="mx-auto my-3 py-5 px-3"> 
             <h1 class="pt-5">당신의 결과는?!</h1>
             <div class="resultname">
 
@@ -69,11 +76,12 @@
             <div class="resultDesc">
 
             </div>
-            <button type="button" class="kakao mt-3 py-2 px-3">공유하기</button>
+            <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:kakaoShare()">공유하기</button>
         </section>
         <!--자바스크립트 길면 로딩할 때 유저는 아무것도 못 보기에 마지막에 하는 것이 대부분-->
         <script src="./js/data.js" charset="UTF-8"></script>
         <script src="./js/start.js" charset="UTF-8"></script>
+        <script src="./js/share.js" charset="UTF-8"></script>
     </div>
 </body>
 
