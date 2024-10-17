@@ -39,11 +39,8 @@ function goResult() {
             qna.style.display = "none";
             result.style.display = "block"
         }, 450);
-        let qIdx = 0;
-        goNext(qIdx);
+        setResult();
     }, 450);
-
-    setResult();
 }
 
 function addAnswer(answerText, qIdx, idx) {
